@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
 import Notification from "./components/Notification/Notification";
+import Description from "./components/Description/Description";
 
 const App = () => {
   const [votingData, setVotingData] = useState(() => {
@@ -35,14 +36,10 @@ const App = () => {
 
   return (
     <>
-      <h1>Sip Happens Café</h1>
-      <p>
-        Please leave your feedback about our service by selecting one of the
-        options below.
-      </p>
+      <Description />
       <Options
         updateFeedback={updateFeedback}
-        resetFeedback={resetFeedback}
+        reetFeedback={resetFeedback}
         totalFeedback={totalFeedback}
       />
       {totalFeedback > 0 ? (
