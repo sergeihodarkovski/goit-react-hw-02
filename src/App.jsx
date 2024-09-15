@@ -39,7 +39,7 @@ const App = () => {
       <Description />
       <Options
         updateFeedback={updateFeedback}
-        reetFeedback={resetFeedback}
+        resetFeedback={resetFeedback}
         totalFeedback={totalFeedback}
       />
       {totalFeedback > 0 ? (
